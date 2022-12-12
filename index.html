@@ -4,13 +4,44 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="Gagan, Chordia, Gagan Chordia, GC, Gagan GV, gagan__gv, gagan-gv, GV, gv, gagan, chordia, gagan chordia, gagan-chordia">
+        <meta name="description" content="Portfolio of a developer and a UI/UX designer, Gagan Chordia. 2022">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" crossorigin="anonymous"/>
         <title>Gagan Chordia</title>
-        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
         <link rel="stylesheet" href="/assets/style/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Dongle&family=Syne&display=swap" rel="stylesheet">
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-12LYP4EX9Y"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+              dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+            gtag('config', 'G-12LYP4EX9Y');
+        </script>
     </head>
     <body>
+
+        <div id="app" v-cloak>
+            <!--Nav Bar Starting-->
+            <nav id="nav" class="nav">
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                </label>
+                <label class="logo"><img src="/assets/images/Logo.png" alt="Logo"></label>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="https://gaganchordia.medium.com/" target="_blank">Blogs</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </nav>
+            <!--Nav Bar Ending-->
+        </div>
         
         <script src="/assets/js/data.js"></script>
         <script src="/assets/js/index.js"></script>
