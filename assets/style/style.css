@@ -54,10 +54,28 @@ nav>ul>li>a:active{
     color: #111;
     font-size: 36px;
     text-decoration: none;
+    display: block;
+    position: relative;
 }
-  
-nav>ul>li>a:hover{
-    filter: drop-shadow(5px 4px 2px #f5ce57);
+
+nav>ul>li>a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.075em;
+    background-color: #111;
+    opacity: 0;
+    transition: opacity 300ms, transform 300ms;
+    opacity: 1;
+    transform: scale(0);
+    transform-origin: center;
+}
+
+nav>ul>li>a:hover::after {
+    opacity: 1;
+    transform: scale(1) translate3d(0, -0.6em, 0);
 }
 
 .checkbtn{
