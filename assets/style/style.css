@@ -221,6 +221,9 @@ nav>ul>li>a:hover::after {
     font-size: 25px;
     border: 2px solid #111;
     border-radius: 50%;
+}
+
+.landing>.landingDets>.landDets>p>a:nth-child(1) {
     margin-right: 25px;
 }
 
@@ -235,16 +238,6 @@ nav>ul>li>a:hover::after {
     bottom: 0;
     font-size: 20px;
     margin-top: 50px;
-    animation: move 1s infinite;
-}
-
-@keyframes move {
-    from, to {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(10px);
-    }
 }
 
 .landing>p>a,
@@ -279,15 +272,18 @@ nav>ul>li>a:hover::after {
         justify-content: space-evenly;
     }
     .landing>.landingDets>.landDets>h1 {
-        font-size: 54px;
+        font-size: 48px;
         text-align: center;
-        margin-top: -50px;
+        margin-top: -30px;
     }
     .landing>.landingDets>.landDets>h1>br {
         display: none;
     }
     .landing>.landingDets>.landDets>p {
         text-align: center;
+    }
+    .landing>.landingDets>.landDets>p>a {
+        font-size: 20px;
     }
     .landing>p {
         margin-top: 70px;
@@ -298,6 +294,6 @@ nav>ul>li>a:hover::after {
         height: 400px;
     }
     .landing>.landingDets>.photo::after {
-        transform: translate(-280px, -20px);
+        transform: translate(-290px, -20px);
     }
 }
