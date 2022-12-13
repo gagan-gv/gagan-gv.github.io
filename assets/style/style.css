@@ -8,6 +8,7 @@
 
 body {
     background-color: #f0f0f0;
+    color: #111;
 }
 
 /*Nav Bar Starts*/
@@ -25,7 +26,6 @@ body {
     font-family: 'Dongle', sans-serif;
 }
 .logo{
-    color: #111;
     line-height: 50px;
     padding: 0 50px;
 }
@@ -80,7 +80,6 @@ nav>ul>li>a:hover::after {
 
 .checkbtn{
     font-size: 30px;
-    color: #111;
     float: right;
     line-height: 80px;
     margin-right: 40px;
@@ -116,7 +115,6 @@ nav>ul>li>a:hover::after {
         width: 100%;
         height: 100%;
         background-color: #f0f0f0;
-        color: #111;
         padding-bottom: 15px;
         top: 80px;
         left: -540px;
@@ -155,7 +153,6 @@ nav>ul>li>a:hover::after {
         width: 100%;
         height: 100%;
         background-color: #f0f0f0;
-        color: #111;
         top: 80px;
         left: -1024px;
         text-align: center;
@@ -238,6 +235,16 @@ nav>ul>li>a:hover::after {
     bottom: 0;
     font-size: 20px;
     margin-top: 50px;
+    animation: move 1s infinite;
+}
+
+@keyframes move {
+    from, to {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
 }
 
 .landing>p>a,
@@ -263,5 +270,34 @@ nav>ul>li>a:hover::after {
     }
     .landing>p {
         margin-top: 70px;
+    }
+}
+
+@media only screen and (min-device-width: 280px) and (max-device-width: 540px) {
+    .landing>.landingDets {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .landing>.landingDets>.landDets>h1 {
+        font-size: 54px;
+        text-align: center;
+        margin-top: -50px;
+    }
+    .landing>.landingDets>.landDets>h1>br {
+        display: none;
+    }
+    .landing>.landingDets>.landDets>p {
+        text-align: center;
+    }
+    .landing>p {
+        margin-top: 70px;
+    }
+    .landing>.landingDets>.photo>img,
+    .landing>.landingDets>.photo::after {
+        width: 300px;
+        height: 400px;
+    }
+    .landing>.landingDets>.photo::after {
+        transform: translate(-280px, -20px);
     }
 }
