@@ -143,7 +143,7 @@ nav>ul>li>a:hover::after {
         margin-top: 10px;
     }
     #nav>ul>li>a{
-        font-size: 24px;
+        font-size: 32px;
     }
     .checkbtn{
         display: block;
@@ -156,7 +156,7 @@ nav>ul>li>a:hover::after {
         height: 100%;
         background-color: #f0f0f0;
         color: #111;
-        top: 70px;
+        top: 80px;
         left: -1024px;
         text-align: center;
         transition: all .5s;
@@ -170,3 +170,98 @@ nav>ul>li>a:hover::after {
 }
 
 /*Nav Bar ends*/
+
+/*Landing Starts*/
+
+.landing>.landingDets {
+    width: 100%;
+    height: 85vh;
+    position: relative;
+    top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.landing>.landingDets>.photo>img {
+    width: 350px;
+    height: 450px;
+    filter: grayscale(0.75);
+}
+
+.landing>.landingDets>.photo {
+    border-radius: 300px 300px 2px 2px;
+    overflow: hidden;
+}
+
+.landing>.landingDets>.photo::after {
+    content: '';
+    position: absolute;
+    border: 2px solid #111;
+    height: 450px;
+    width: 350px;
+    transform: translate(-330px, -20px);
+    z-index: -999;
+    border-radius: 300px 300px 2px 2px;
+}
+
+.landing>.landingDets>.landDets>h1 {
+    font-family: 'Syne', sans-serif;
+    font-size: 72px;
+    font-weight: 400;
+}
+
+.landing>.landingDets>.landDets>p {
+    padding: 10px 0;
+}
+
+.landing>.landingDets>.landDets>p>a,
+.landing>.landingDets>.landDets>p>a:visited,
+.landing>.landingDets>.landDets>p>a:active {
+    color: #111;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 25px;
+    border: 2px solid #111;
+    border-radius: 50%;
+    margin-right: 25px;
+}
+
+.landing>.landingDets>.landDets>p>a:hover {
+    border: 2px dashed #111;
+    filter: drop-shadow(0 0 2px #111);
+}
+
+.landing>p {
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    font-size: 20px;
+    margin-top: 50px;
+}
+
+.landing>p>a,
+.landing>p>a:visited,
+.landing>p>a:active {
+    color: #111;
+    text-decoration: none;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1023px) {
+    .landing>.landingDets {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .landing>.landingDets>.landDets>h1 {
+        margin-top: -50px;
+    }
+    .landing>.landingDets>.landDets>h1>br {
+        display: none;
+    }
+    .landing>.landingDets>.landDets>p {
+        text-align: center;
+    }
+    .landing>p {
+        margin-top: 70px;
+    }
+}

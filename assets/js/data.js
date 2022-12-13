@@ -1,7 +1,7 @@
 const app = Vue.createApp({
     data() {
         return {
-            landingImage: '',
+            landing: "./assets/images/gagan.jpg",
             about: 'A senior year student pursuing B.Tech in Computer Science and Engineering at Vellore Institute of Technology (VIT), Vellore. I\'m intriguied by UI/UX and Machine Learning.',
             aboutImage: '',
             experience: [
@@ -134,4 +134,4 @@ const app = Vue.createApp({
     }
 })
 
-app.mount('#app')
+app.mount("#app")

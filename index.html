@@ -7,11 +7,12 @@
         <meta name="keywords" content="Gagan, Chordia, Gagan Chordia, GC, Gagan GV, gagan__gv, gagan-gv, GV, gv, gagan, chordia, gagan chordia, gagan-chordia">
         <meta name="description" content="Portfolio of a developer and a UI/UX designer, Gagan Chordia. 2022">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" crossorigin="anonymous"/>
+        <link rel="shortcut icon" href="/assets/images/Icon.png" type="image/x-icon">
         <title>Gagan Chordia</title>
         <link rel="stylesheet" href="/assets/style/style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Dongle&family=Syne&display=swap" rel="stylesheet">
-        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-12LYP4EX9Y"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
@@ -24,7 +25,7 @@
     </head>
     <body>
 
-        <div id="app" v-cloak>
+        <div id="app">
             <!--Nav Bar Starting-->
             <nav id="nav" class="nav">
                 <input type="checkbox" id="check">
@@ -41,8 +42,26 @@
                 </ul>
             </nav>
             <!--Nav Bar Ending-->
+
+            <!--Landing Starting-->
+            <main class="landing" id="landing">
+                <section class="landingDets">
+                    <section id="photo" class="photo" oncontextmenu="return false">
+                        <img v-bind:src="landing" alt="My Photo">
+                    </section>
+                    <section class="landDets">
+                        <h1>Gagan <br/>Chordia</h1>
+                        <p>
+                            <a href="https://github.com/gagan-gv" target="_blank" rel="noopener noreferrer" class="fa-brands fa-github"></a>
+                            <a href="https://www.behance.net/gaganchordia" target="_blank" rel="noopener noreferrer" class="fa-brands fa-behance"></a>
+                        </p>
+                    </section>
+                </section>
+                <p><a href="#about" class="fa-solid fa-angles-down"></a></p>
+            </main>
         </div>
         
+        <script src="https://unpkg.com/vue@next/dist/vue.global.js"></script>
         <script src="/assets/js/data.js"></script>
         <script src="/assets/js/index.js"></script>
     </body>
