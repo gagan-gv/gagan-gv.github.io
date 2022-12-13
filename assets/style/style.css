@@ -297,3 +297,59 @@ nav>ul>li>a:hover::after {
         transform: translate(-290px, -20px);
     }
 }
+
+/*Landing Ends*/
+
+/*About Starts*/
+.about {
+    margin: 50px 0;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Syne', sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    margin: 25px 0;
+}
+
+.content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.about>.content>.aboutImage {
+    overflow: hidden;
+    border-radius: 2px;
+}
+
+.about>.content>.aboutImage>img {
+    width: 250px;
+    height: 250px;
+    filter: grayscale(0.75);
+}
+
+.about>.content>.aboutContent {
+    width: 30%;
+    font-family: 'Dongle', sans-serif;
+    font-size: 32px;
+}
+
+@media only screen and (min-device-width: 280px) and (max-device-width: 540px) {
+    .content {
+        flex-direction: column-reverse;
+    }
+    .about>.content>.aboutContent {
+        padding: 20px 0 0 0;
+        width: 80%;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1023px) {
+    .about>.content>.aboutContent {
+        width: 50%;
+    }
+}

@@ -3,7 +3,7 @@ const app = Vue.createApp({
         return {
             landing: "./assets/images/gagan.jpg",
             about: 'A senior year student pursuing B.Tech in Computer Science and Engineering at Vellore Institute of Technology (VIT), Vellore. I\'m intriguied by UI/UX and Machine Learning.',
-            aboutImage: '',
+            aboutImage: './assets/images/gagan_about.jpg',
             experience: [
                 {
                     designation: 'SDE Intern',

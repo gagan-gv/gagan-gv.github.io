@@ -26,7 +26,7 @@
     <body>
 
         <div id="app">
-            <!--Nav Bar Starting-->
+            <!--Nav Bar Starts-->
             <nav id="nav" class="nav">
                 <input type="checkbox" id="check">
                 <label for="check" class="checkbtn">
@@ -41,9 +41,9 @@
                     <li><a href="#contact">Contact Me</a></li>
                 </ul>
             </nav>
-            <!--Nav Bar Ending-->
+            <!--Nav Bar Ends-->
 
-            <!--Landing Starting-->
+            <!--Landing Starts-->
             <main class="landing" id="landing">
                 <section class="landingDets">
                     <section id="photo" class="photo" oncontextmenu="return false">
@@ -59,6 +59,21 @@
                 </section>
                 <p><a href="#about" class="fa-solid fa-angles-down"></a></p>
             </main>
+            <!--Landing Ends-->
+
+            <!--About Starts-->
+            <article id="about" class="about">
+                <h2>About</h2>
+                <section class="content">
+                    <section class="aboutContent" id="aboutContent">
+                        {{ about }}
+                    </section>
+                    <section class="aboutImage" id="aboutImage" oncontextmenu="return false">
+                        <img v-bind:src="aboutImage" alt="My Photo">
+                    </section>
+                </section>
+            </article>
+            <!--About Ends-->
         </div>
         
         <script src="https://unpkg.com/vue@next/dist/vue.global.js"></script>
