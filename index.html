@@ -121,6 +121,17 @@
                 </section>
             </article>
             <!--About Ends-->
+
+            <!--Skills Starts-->
+            <article class="skills" id="skills">
+                <h2>Skills</h2>
+                <section class="content">
+                    <figure v-for="skill in skills">
+                        <img :src="skill.image" alt="skill.skill">
+                        <figcaption>{{ skill.skill }}</figcaption>
+                    </figure>
+                </section>
+            </article>
         </div>
         
         <script src="https://unpkg.com/vue@next/dist/vue.global.js"></script>

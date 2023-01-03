@@ -5,12 +5,12 @@ const app = Vue.createApp({
             about: 'A senior year student pursuing B.Tech in Computer Science and Engineering at Vellore Institute of Technology (VIT), Vellore. I\'m intriguied by UI/UX and Machine Learning.',
             aboutImage: './assets/images/gagan_about.jpg',
             experience: [
-                {
+                /*{
                     designation: 'SDE Intern',
                     company: 'Amazon',
                     period: 'Jan 2023 - Present',
                     works: []
-                },
+                },*/
                 {
                     designation: 'UI/UX Intern',
                     company: 'House of Babas',
@@ -72,31 +72,31 @@ const app = Vue.createApp({
             ],
             skills: [
                 {
-                    image: '',
+                    image: './assets/images/java.png',
                     skill: 'Java'
                 },
                 {
-                    image: '',
+                    image: './assets/images/springboot.png',
                     skill: 'Spring Boot'
                 },
                 {
-                    image: '',
+                    image: './assets/images/python.png',
                     skill: 'Python'
                 },
                 {
-                    image: '',
+                    image: './assets/images/r.png',
                     skill: 'R Programming'
                 },
                 {
-                    image: '',
+                    image: './assets/images/psql.png',
                     skill: 'PostgreSQL'
                 },
                 {
-                    image: '',
+                    image: './assets/images/Ubuntu.png',
                     skill: 'Ubuntu'
                 },
                 {
-                    image: '',
+                    image: './assets/images/Figma.png',
                     skill: 'Figma'
                 }
             ],
