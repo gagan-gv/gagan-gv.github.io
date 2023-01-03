@@ -442,7 +442,7 @@ h2 {
 
 .skills .content {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     margin: 0 auto;
