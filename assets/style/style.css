@@ -9,6 +9,7 @@
 body {
     background-color: #f0f0f0;
     color: #111;
+    overflow-x: hidden;
 }
 
 /*Nav Bar Starts*/
@@ -236,8 +237,18 @@ nav>ul>li>a:hover::after {
     text-align: center;
     position: relative;
     bottom: 0;
-    font-size: 20px;
+    font-size: 25px;
     margin-top: 50px;
+    animation: move 1s infinite;
+}
+
+@keyframes move {
+    from, to {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
 }
 
 .landing>p>a,
@@ -329,6 +340,11 @@ h2 {
     width: 250px;
     height: 250px;
     filter: grayscale(0.75);
+    transform: rotateZ(45deg);
+}
+
+.about>.content>.aboutImage>img:hover {
+    transform: rotateZ(0) scale(2) translateX(30px);
 }
 
 .about>.content>.aboutContent {
