@@ -472,8 +472,8 @@ h2 {
     font-size: 32px;
 }
 
-.skills figure:hover {
-    filter: drop-shadow(0 0 2px #111);
+.skills figure:hover img {
+    transform: rotateY(360deg);
 }
 
 @media only screen and (min-device-width: 280px) and (max-device-width: 540px) {
