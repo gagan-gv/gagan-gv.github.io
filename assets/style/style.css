@@ -566,4 +566,10 @@ h2 {
     filter: drop-shadow(0 0 2px #222);
 }
 
+@media only screen and (min-device-width: 280px) and (max-device-width: 540px) {
+    .project .content {
+        width: 100%;
+    }
+}
+
 /*Project Ends*/
