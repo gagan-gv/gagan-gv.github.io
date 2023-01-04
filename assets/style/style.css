@@ -472,8 +472,17 @@ h2 {
     font-size: 32px;
 }
 
+.skills figure figcaption {
+    visibility: collapse;
+    transition: ease-in-out 0.5s;
+}
+
 .skills figure:hover img {
     transform: rotateY(360deg);
+}
+
+.skills figure:hover figcaption {
+    visibility: visible;
 }
 
 @media only screen and (min-device-width: 280px) and (max-device-width: 540px) {
