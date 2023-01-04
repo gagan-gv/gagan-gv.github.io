@@ -470,10 +470,11 @@ h2 {
     font-family: 'Dongle', sans-serif;
     text-align: center;
     font-size: 32px;
+    color: #111;
 }
 
 .skills figure figcaption {
-    visibility: collapse;
+    opacity: 0;
     transition: ease-in-out 0.5s;
 }
 
@@ -482,7 +483,7 @@ h2 {
 }
 
 .skills figure:hover figcaption {
-    visibility: visible;
+    opacity: 1;
 }
 
 @media only screen and (min-device-width: 280px) and (max-device-width: 540px) {
@@ -491,6 +492,78 @@ h2 {
         width: 100%;
         flex-wrap: nowrap;
     }
+    .skills figure figcaption {
+        opacity: 1;
+    }
 }
 
 /*Skill Ends*/
+
+/*Project Starts*/
+.project .content {
+    width: 70%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.project .content .box {
+    width: 300px;
+    height: 225px;
+    padding: 15px 20px;
+    margin: 15px 5px;
+    border: 2px solid #111;
+    border-radius: 3px;
+    color: #111;
+}
+
+.project .content .box h4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.project .content .box h4 i {
+    font-size: 32px;
+}
+
+.project .content .box h4 a,
+.project .content .box h4 a:visited,
+.project .content .box h4 a:active {
+    font-size: 24px;
+    text-decoration: none;
+    color: #111;
+    opacity: 0.75;
+}
+
+.project .content .box h4 a:hover {
+    opacity: 1;
+}
+
+.project .content .box h3 {
+    position: relative;
+    top: 20px;
+    font-size: 32px;
+    font-family: 'Syne', sans-serif;
+}
+
+.project .content .box p {
+    position: relative;
+    top: 30px;
+    font-size: 32px;
+    font-family: 'Dongle', sans-serif;
+    line-height: 26px;
+}
+
+.project .content .box:hover {
+    transform: translateY(-10px);
+}
+
+.project .content .box:hover h3 {
+    filter: drop-shadow(0 0 2px #222);
+}
+
+/*Project Ends*/

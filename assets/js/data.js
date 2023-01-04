@@ -102,34 +102,53 @@ const app = Vue.createApp({
             ],
             projects: [
                 {
-                    imagePath: "../images/ek-rakht.png",
                     title: "Ek Rakht",
-                    desc: "An interface design to simplify the task to find blood donors & camps",
+                    desc: "An application design for a blood donation app, which can simplify the task for both blood banks as well as donors.",
                     link: "https://www.behance.net/gallery/157046333/Ek-Rakht-Blood-Donation-App",
                     linkTo: "Behance"
                 },
                 {
-                    imagePath: "../images/codon.png",
+                    title: "Code Script",
+                    desc: "A case study between 2 code to image converter websites and designing an interface based on both of their pros and cons.",
+                    link: "https://www.behance.net/gallery/146008979/Code-Script-A-UXUI-Case-Study",
+                    linkTo: "Behance"
+                },
+                {
+                    title: "AlcSplash",
+                    desc: "An e-commerce mobile design for popular alcohol brands with some contemporary features.",
+                    link: "https://www.behance.net/gallery/128924549/AlcSplash",
+                    linkTo: "Behance"
+                },
+                {
                     title: "Codon",
                     desc: "A basic code editor compatible with Python, Java, R, C, C++ and Go. Developed in Python.",
                     link: "https://github.com/gagan-gv/Code-Editor",
                     linkTo: "GitHub"
                 },
                 {
-                    imagePath: "../images/coviddaily.png",
                     title: "COVID Daily",
-                    desc: "An android app which shows the daily statistics of COVID cases in India. Developed in Java and XML.",
+                    desc: "An android app which shows the daily statistics of COVID cases in India. Developed in Java and XML & using covid19india API.",
                     link: "https://dumblabs-co.github.io/coviddaily",
                     linkTo: "Website"
                 },
                 {
-                    imagePath: "../images/codescript.png",
-                    title: "Code Script",
-                    desc: "A case study between 2 code to image converter websites and designing an interface based on both of their pros and cons.",
-                    link: "https://www.behance.net/gallery/146008979/Code-Script-A-UXUI-Case-Study",
-                    linkTo: "Behance"
+                    title: "Edusite",
+                    desc: "An e-learning website developed with HTML, CSS, JS, Bootstrap, JQuery, PHP and MySQL.",
+                    link: "https://github.com/gagan-gv/Edusite",
+                    linkTo: "GitHub"
                 }
             ]
+        }
+    },
+    methods: {
+        whichIcon(linkTo) {
+            if(linkTo === "GitHub") {
+                return "fa-brands fa-github"
+            } else if(linkTo === "Behance") {
+                return "fa-brands fa-behance"
+            } else {
+                return "fa-solid fa-globe"
+            }
         }
     }
 })

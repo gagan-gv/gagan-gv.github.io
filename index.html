@@ -136,10 +136,21 @@
             <!--Skills Ends-->
 
             <!--Project Starts-->
+            <article class="project" id="projects">
+                <h2>Projects</h2>
+                <section class="content">
+                    <div class="box" v-for="proj in projects">
+                        <h4><i class="fa-regular fa-folder-open"></i><a :href="proj.link" target="_blank" :class="whichIcon(proj.linkTo)" rel="noopener noreferrer"></a></h4>
+                        <h3>{{ proj.title }}</h3>
+                        <p>{{ proj.desc }}</p>
+                    </div>
+                </section>
+            </article>
+            <!--Project Ends-->
 
         </div>
         
-        <script src="https://unpkg.com/vue@next/dist/vue.global.js"></script>
+        <script src="https://unpkg.com/vue@next/dist/vue.global.prod.js"></script>
         <script src="/assets/js/data.js"></script>
         <script src="/assets/js/index.js"></script>
     </body>
