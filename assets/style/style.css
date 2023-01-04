@@ -435,8 +435,8 @@ h2 {
         margin: 20px 0;
     }
     .timeline-area{
-        width: 60%;
-        margin: 10px 30px;
+        width: 80%;
+        margin: 10px auto;
     }
 }
 
@@ -447,8 +447,8 @@ h2 {
         margin: 20px 0;
     }
     .timeline-area{
-        width: 70%;
-        margin: 10px 30px;
+        width: 60%;
+        margin: 10px auto;
     }
 }
 
