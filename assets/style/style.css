@@ -224,7 +224,7 @@ nav>ul>li>a:hover::after {
     border-radius: 50%;
 }
 
-.landing>.landingDets>.landDets>p>a:nth-child(1) {
+.landing>.landingDets>.landDets>p>a:not(:last-child) {
     margin-right: 25px;
 }
 
