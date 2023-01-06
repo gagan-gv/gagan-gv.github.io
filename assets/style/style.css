@@ -672,3 +672,26 @@ h2 {
         padding: 0 10px;
     }
 }
+/*Footer ends*/
+
+/*Cloak starts*/
+[v-cloak] > *{
+    visibility: hidden;
+}
+
+[v-cloak]::before {
+    content: url(../images/loading.png);
+    height: 100vh;
+    position: absolute;
+    top: calc(45vh - 75px);
+    left: calc(50vw - 75px);
+    z-index: 999999999;
+    background-color: #f0f0f0;
+}
+
+@media only screen and (min-device-width: 280px) and (max-device-width: 1023px){
+    [v-cloak]::before{
+        left: calc(42vw - 75px);
+    }
+}
+/*Cloak Ends*/
