@@ -5,12 +5,12 @@ const app = Vue.createApp({
             about: 'A senior year student pursuing B.Tech in Computer Science and Engineering at Vellore Institute of Technology (VIT), Vellore. I\'m intriguied by UI/UX and Machine Learning.',
             aboutImage: './assets/images/gagan_about.jpg',
             experience: [
-                /*{
+                {
                     designation: 'SDE Intern',
                     company: 'Amazon',
                     period: 'Jan 2023 - Present',
                     works: []
-                },*/
+                },
                 {
                     designation: 'UI/UX Intern',
                     company: 'House of Babas',

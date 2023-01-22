@@ -305,7 +305,7 @@ nav>ul>li>a:hover::after {
         font-size: 20px;
     }
     .landing>p {
-        margin-top: 70px;
+        margin-top: 50px;
     }
     .landing>.landingDets>.photo>img,
     .landing>.landingDets>.photo::after {
@@ -695,3 +695,13 @@ h2 {
     }
 }
 /*Cloak Ends*/
+
+/*Scroll Bar*/
+::-webkit-scrollbar{
+    background: #f0f0f0;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #111;
+    border-radius: 5px;
+}
