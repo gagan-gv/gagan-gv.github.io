@@ -14,7 +14,7 @@ body {
 
 /*Nav Bar Starts*/
 
-#nav{
+#nav {
     background: #f0f0f0;
     position: fixed;
     height: 70px;
@@ -26,23 +26,23 @@ body {
     border-bottom: 2px solid #111;
     font-family: 'Dongle', sans-serif;
 }
-.logo{
+.logo {
     line-height: 50px;
     padding: 0 50px;
 }
 
-.logo>img{
+.logo>img {
     width: 30px;
     height: 60px;
     margin-top: 10px;
 }
 
-nav>ul{
+nav>ul {
     float: right;
     margin-right: 20px;
 }
   
-nav>ul>li{
+nav>ul>li {
     display: inline-block;
     line-height: 70px;
     margin: 0 15px;
@@ -51,7 +51,7 @@ nav>ul>li{
   
 nav>ul>li>a,
 nav>ul>li>a:visited,
-nav>ul>li>a:active{
+nav>ul>li>a:active {
     color: #111;
     font-size: 36px;
     text-decoration: none;
@@ -353,6 +353,7 @@ h2 {
 
 .about>.content>.aboutImage>img:hover {
     transform: rotateZ(0) scale(2) translateX(30px);
+    filter: grayscale(0.4);
 }
 
 .about>.content>.aboutContent {
@@ -423,6 +424,10 @@ h2 {
     left: -38.5px;
 }
 
+.timeline-area .timeline:hover::before {
+    background: #111;
+}
+
 .timeline-area .timeline h4{
     font-size: 24px;
     padding: auto;
@@ -448,7 +453,7 @@ h2 {
     }
 }
 
-@media only screen and (min-device-width: 280px) and (max-device-width: 540px){
+@media only screen and (min-device-width: 280px) and (max-device-width: 540px) {
     .time {
         flex-direction: column;
         align-items: center;
@@ -579,7 +584,7 @@ h2 {
     transition : transform 0.25s linear;
 }
 
-.project .content .box:hover h3::after{
+.project .content .box:hover h3::after {
     transform-origin: bottom left;
     transform: scaleX(1);
 }
@@ -674,13 +679,15 @@ h2 {
 }
 /*Footer ends*/
 
-/*Cloak starts*/
-[v-cloak] > *{
+/*Cloak & Loader starts*/
+[v-cloak] > *,
+.loader {
     visibility: hidden;
 }
 
-[v-cloak]::before {
-    content: url(../images/loading.png);
+[v-cloak]::before,
+.loader::before {
+    content: url(../images/Icon.png);
     height: 100vh;
     position: absolute;
     top: calc(45vh - 75px);
@@ -690,18 +697,19 @@ h2 {
 }
 
 @media only screen and (min-device-width: 280px) and (max-device-width: 1023px){
-    [v-cloak]::before{
+    [v-cloak]::before,
+    .loader::before {
         left: calc(42vw - 75px);
     }
 }
-/*Cloak Ends*/
+/*Cloak & Loader Ends*/
 
 /*Scroll Bar*/
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     background: #f0f0f0;
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
     background: #111;
     border-radius: 5px;
 }
