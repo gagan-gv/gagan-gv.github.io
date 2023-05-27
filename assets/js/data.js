@@ -9,7 +9,11 @@ const app = Vue.createApp({
                     designation: 'SDE Intern',
                     company: 'Amazon',
                     period: 'Jan 2023 - Present',
-                    works: []
+                    works: [
+                        {work: 'Work with AWS and building resource stacks with AWS CDK library'},
+                        {work: 'Build and manage pipelines for proper delivery'},
+                        {work: 'Build Amazon Alexa features on Amazon iOS App'}
+                    ]
                 },
                 {
                     designation: 'UI/UX Intern',
