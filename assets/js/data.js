@@ -10,9 +10,9 @@ const app = Vue.createApp({
                     company: 'Amazon',
                     period: 'Jan 2023 - Present',
                     works: [
+                        {work: 'Build Amazon Alexa features on Amazon iOS App'},
                         {work: 'Work with AWS and building resource stacks with AWS CDK library'},
-                        {work: 'Build and manage pipelines for proper delivery'},
-                        {work: 'Build Amazon Alexa features on Amazon iOS App'}
+                        {work: 'Build and manage pipelines for proper delivery'}
                     ]
                 },
                 {
@@ -50,10 +50,10 @@ const app = Vue.createApp({
                 {
                     certificate: 'Bachelor\'s of Technology',
                     institute: 'Vellore Institiute of Technology, Vellore',
-                    period: 'July 2019 - Present',
+                    period: 'July 2019 - June 2023',
                     additionals: [
                         {add: 'Major - Computer Science and Engineering'},
-                        {add: 'CGPA - 8.25'}
+                        {add: 'CGPA - 8.30'}
                     ]
                 },
                 {
