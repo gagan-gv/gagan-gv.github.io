@@ -93,36 +93,6 @@
                             </section>
                         </section>
                     </section>
-                    <section id="org" class="org">
-                        <h3>Organizations</h3>
-                        <section class="timeline-area">
-                            <section class="timeline" v-for="org in organizations">
-                                <h4>{{ org.designation }}</h4>
-                                <p>{{ org.organization }}</p>
-                                <p>{{ org.period }}</p>
-                                <p>
-                                    <ul v-for="work in org.works">
-                                        <li>{{ work.work }}</li>
-                                    </ul>
-                                </p>
-                            </section>
-                        </section>
-                    </section>
-                    <section id="edu" class="edu">
-                        <h3>Education</h3>
-                        <section class="timeline-area">
-                            <section class="timeline" v-for="ed in education">
-                                <h4>{{ ed.certificate }}</h4>
-                                <p>{{ ed.institute }}</p>
-                                <p>{{ ed.period }}</p>
-                                <p>
-                                    <ul v-for="add in ed.additionals">
-                                        <li>{{ add.add }}</li>
-                                    </ul>
-                                </p>
-                            </section>
-                        </section>
-                    </section>
                 </section>
             </article>
             <!--About Ends-->

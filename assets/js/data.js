@@ -2,17 +2,17 @@ const app = Vue.createApp({
     data() {
         return {
             landing: "./assets/images/gagan.jpg",
-            about: 'A senior year student pursuing B.Tech in Computer Science and Engineering at Vellore Institute of Technology (VIT), Vellore. I\'m intriguied by UI/UX and Machine Learning.',
+            about: 'An imaginative code crafter, weaving logic and innovation into software realms, ready to shape the future with lines of endless possibilities.',
             aboutImage: './assets/images/gagan_about.jpg',
             experience: [
                 {
-                    designation: 'SDE Intern',
+                    designation: 'Software Development Engineer Intern',
                     company: 'Amazon',
-                    period: 'Jan 2023 - Present',
+                    period: 'Jan 2023 - Jun 2023',
                     works: [
-                        {work: 'Build Amazon Alexa features on Amazon iOS App'},
-                        {work: 'Work with AWS and building resource stacks with AWS CDK library'},
-                        {work: 'Build and manage pipelines for proper delivery'}
+                        {work: 'Integrated Amazon Alexa features into the Amazon iOS App'},
+                        {work: 'Utilized AWS services and CDK to ease management of ML Model Productionization'},
+                        {work: 'Built and managed pipelines to ensure seamless and efficient delivery'}
                     ]
                 },
                 {
@@ -22,55 +22,6 @@ const app = Vue.createApp({
                     works: [
                         {work: 'Designed interface for the official app using Figma'},
                         {work: 'Created prototypes for the interface using Framer'}
-                    ]
-                }
-            ],
-            organizations: [
-                {
-                    designation: "Management Chair",
-                    organization: "Mozilla Firefox Club",
-                    period: "January 2021 - February 2022",
-                    works:[
-                        {work: "Organized MozCode'21"},
-                        {work: "Conducted and organized multiple events"},
-                        {work: "Led a group of 100+ people"}
-                    ]
-                },
-                {
-                    designation: "Digital Content Head",
-                    organization: "Hindi Literary Association",
-                    period: "April 2021 - January 2022",
-                    works:[
-                        {work: "Designed and developed the organizations official website"},
-                        {work: "Managed all digital platforms"}
-                    ]
-                }
-            ],
-            education: [
-                {
-                    certificate: 'Bachelor\'s of Technology',
-                    institute: 'Vellore Institiute of Technology, Vellore',
-                    period: 'July 2019 - June 2023',
-                    additionals: [
-                        {add: 'Major - Computer Science and Engineering'},
-                        {add: 'CGPA - 8.30'}
-                    ]
-                },
-                {
-                    certificate: 'AISSCE',
-                    institute: 'Chettinad Vidyashram, Chennai',
-                    period: 'Apr 2017 - May 2019',
-                    additionals: [
-                        {add: 'Subjects - Physics, Chemistry, Mathematics & Biotechnology'},
-                        {add: 'Percentage - 81.8'}
-                    ]
-                },
-                {
-                    certificate: 'AISSE',
-                    institute: 'Chettinad Vidyashram, Chennai',
-                    period: 'Jun 2008 - Apr 2017',
-                    additionals: [
-                        {add: 'CGPA - 8.80'}
                     ]
                 }
             ],
