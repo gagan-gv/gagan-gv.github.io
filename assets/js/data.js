@@ -57,6 +57,12 @@ const app = Vue.createApp({
             ],
             projects: [
                 {
+                    title: "Mail Flock",
+                    desc: "A cold mailing platform built with Spring Boot, MySQL, Maven, Thymeleaf and Vue.js.",
+                    link: "https://github.com/gagan-gv/mail-flock",
+                    linkTo: "GitHub"
+                },
+                {
                     title: "Ek Rakht",
                     desc: "An application design for a blood donation app, which can simplify the task for both blood banks as well as donors.",
                     link: "https://www.behance.net/gallery/157046333/Ek-Rakht-Blood-Donation-App",
@@ -85,12 +91,6 @@ const app = Vue.createApp({
                     desc: "An android app which shows the daily statistics of COVID cases in India. Developed in Java and XML & using covid19india API.",
                     link: "https://dumblabs-co.github.io/coviddaily",
                     linkTo: "Website"
-                },
-                {
-                    title: "Edusite",
-                    desc: "An e-learning website developed with HTML, CSS, JS, Bootstrap, JQuery, PHP and MySQL.",
-                    link: "https://github.com/gagan-gv/Edusite",
-                    linkTo: "GitHub"
                 }
             ]
         }
