@@ -1,17 +1,23 @@
 <template>
-  <main>
-    <ContactComponent />
+  <main class="container">
+    <ContactComponent class="contact" />
+    <ImageComponent class="image" />
+    <DetailsComponent class="content" />
   </main>
 </template>
 
 <script>
 import '@fortawesome/fontawesome-free/css/all.css';
-import ContactComponent from '@/components/ContactComponent.vue';
+import ContactComponent from '@/components/Contact.vue';
+import ImageComponent from '@/components/Image.vue';
+import DetailsComponent from './components/DetailsComponent.vue';
 
 export default {
   name: 'App',
   components: {
     ContactComponent,
+    ImageComponent,
+    DetailsComponent,
   },
 };
 </script>
@@ -57,9 +63,37 @@ export default {
   padding: 20px;
 }
 
-@media (max-width: 767px) {
+.container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 0.25fr 0.75fr;
+  gap: 30px 10px;
+  grid-template-areas: "Contact Content" "Image Content";
+}
+
+.contact {
+  grid-area: Contact;
+  position: sticky;
+  z-index: 1;
+}
+
+.content {
+  grid-area: Content;
+}
+
+.image {
+  grid-area: Image;
+  position: sticky;
+  z-index: 1;
+}
+
+@media only screen and (max-width: 1023px) {
   #app {
     padding: 0;
+  }
+
+  .container {
+    display: block;
   }
 }
 </style>

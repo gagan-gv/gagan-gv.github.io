@@ -50,7 +50,7 @@ export default {
     margin-right: 10px;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1023px) {
     .contact-tab {
         margin: 0;
         min-width: 100vw;
@@ -67,12 +67,6 @@ export default {
 
     .links > i {
         font-size: 24px;
-    }
-}
-
-@media only screen and (max-width: 1023px) {
-    .contact-tab {
-        width: 280px;
     }
 }
 </style>
