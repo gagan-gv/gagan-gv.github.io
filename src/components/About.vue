@@ -2,8 +2,8 @@
   <section class="about">
     <h1>Hey there, I'm Gagan Chordia.</h1>
     <p>
-      An imaginative creator, blending aesthetics and innovation into digital landscapes,
-      poised to shape the future with designs and code that unlock boundless possibilities.
+      A budding creator, eager to explore the vast world of code and design,
+      ready to embark on a journey of endless possibilities.
     </p>
   </section>
 </template>
@@ -16,11 +16,11 @@ export default {
 
 <style scoped>
 .about {
-  background: #1db954;
+  background: linear-gradient(90deg, #1DB954 0%, rgba(29, 185, 84, 0.50) 65.42%);
   color: #fff;
   max-width: 3fr;
   height: max-content;
-  padding: 20px 10px;
+  padding: 20px;
   border-radius: 10px;
 }
 
