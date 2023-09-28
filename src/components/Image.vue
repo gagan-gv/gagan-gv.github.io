@@ -10,7 +10,7 @@ export default {
 
 <style scoped>
 .img-container {
-  min-height: 525px;
+  min-height: 545px;
   width: 350px;
   position: relative;
   background-image: url("@/assets/images/gagan.jpg");
@@ -19,6 +19,7 @@ export default {
   border-radius: 10px;
   background-position: -40px 0;
   transition: all 0.5s;
+  margin-top: 20px;
 }
 
 .img-container:hover {

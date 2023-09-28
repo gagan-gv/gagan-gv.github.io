@@ -2,7 +2,7 @@
   <section class="card-container">
     <img :src="imgSrc" :alt="title" />
     <h4>{{ title }}</h4>
-    <p>{{ desc }}</p>
+    <p v-if="desc !== null">{{ desc }}</p>
   </section>
 </template>
 
@@ -20,11 +20,10 @@ export default {
 <style scoped>
 .card-container {
   width: 200px;
-  height: max-content;
   padding: 12px;
   background-color: #1d1a1f;
   border-radius: 5px;
-  margin: 20px 0;
+  margin: 20px 20px 20px 0;
   transition: all 0.5s;
   -o-transition: all 0.5s;
   -moz-transition: all 0.5s;
@@ -46,6 +45,7 @@ export default {
 .card-container p {
   font-size: 14px;
   color: #e5e5e5;
+  height: 20px;
 }
 
 .card-container:hover {
@@ -56,9 +56,12 @@ export default {
   .card-container {
     padding: 0;
     background-color: #090807;
-    display: flex;
-    flex-direction: column;
     width: 150px;
+  }
+
+  .card-container img {
+    width: 150px;
+    padding: 10px;
   }
 
   .card-container h4,

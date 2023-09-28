@@ -3,6 +3,7 @@
     <NavBar />
     <AboutComponent />
     <EducationComponent />
+    <ExperienceComponent />
   </section>
 </template>
 
@@ -10,6 +11,7 @@
 import AboutComponent from './About.vue';
 import NavBar from './NavBar.vue';
 import EducationComponent from './Education.vue';
+import ExperienceComponent from './Experience.vue';
 
 export default {
   name: 'DetailsComponent',
@@ -17,6 +19,7 @@ export default {
     AboutComponent,
     NavBar,
     EducationComponent,
+    ExperienceComponent,
   },
 };
 </script>

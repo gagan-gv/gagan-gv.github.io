@@ -1,7 +1,9 @@
 <template>
   <main class="container">
-    <ContactComponent class="contact" />
-    <ImageComponent class="image" />
+    <aside class="aside">
+      <ContactComponent />
+      <ImageComponent />
+    </aside>
     <DetailsComponent class="content" />
   </main>
 </template>
@@ -66,25 +68,20 @@ export default {
 .container {
   display: grid;
   grid-template-columns: 1fr 3fr;
-  grid-template-rows: 0.25fr 0.75fr;
   gap: 20px 0;
-  grid-template-areas: "Contact Content" "Image Content";
+  grid-template-areas: "Aside Content";
 }
 
-.contact {
-  grid-area: Contact;
-  position: sticky;
+.aside {
+  grid-area: Aside;
+  position: fixed;
   z-index: 1;
+  margin: 20px 0;
+  top: 0;
 }
 
 .content {
   grid-area: Content;
-}
-
-.image {
-  grid-area: Image;
-  position: sticky;
-  z-index: 1;
 }
 
 @media only screen and (max-width: 1023px) {
