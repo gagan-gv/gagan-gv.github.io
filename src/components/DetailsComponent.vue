@@ -2,18 +2,21 @@
   <section class="content">
     <NavBar />
     <AboutComponent />
+    <EducationComponent />
   </section>
 </template>
 
 <script>
 import AboutComponent from './About.vue';
 import NavBar from './NavBar.vue';
+import EducationComponent from './Education.vue';
 
 export default {
   name: 'DetailsComponent',
   components: {
     AboutComponent,
     NavBar,
+    EducationComponent,
   },
 };
 </script>
