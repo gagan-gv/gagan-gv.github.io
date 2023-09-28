@@ -68,7 +68,7 @@ export default {
 .container {
   display: grid;
   grid-template-columns: 1fr 3fr;
-  gap: 20px 0;
+  max-height: 100vh;
   grid-template-areas: "Aside Content";
 }
 
@@ -82,6 +82,7 @@ export default {
 
 .content {
   grid-area: Content;
+  max-height: calc(100vh - 40px);
 }
 
 @media only screen and (max-width: 1023px) {

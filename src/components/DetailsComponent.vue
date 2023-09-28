@@ -29,6 +29,18 @@ export default {
   background-color: #171519;
   padding: 20px 30px;
   border-radius: 10px;
+  overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+  background: transparent;
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #272529;
+  border-radius: 2px;
+  padding: 10px;
 }
 
 @media only screen and (max-width: 1023px) {
