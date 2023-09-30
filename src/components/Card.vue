@@ -1,6 +1,6 @@
 <template>
   <section class="card-container">
-    <img :src="imgSrc" :alt="title" />
+    <img :src="imgSrc" :alt="title" draggable="false" />
     <h4>{{ title }}</h4>
     <p v-if="desc !== null">{{ desc }}</p>
   </section>

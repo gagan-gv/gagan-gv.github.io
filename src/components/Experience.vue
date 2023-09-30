@@ -26,11 +26,13 @@ export default {
     return {
       experience: [
         {
+          index: 1,
           imgSrc: 'https://s3-symbol-logo.tradingview.com/amazon--600.png',
           title: 'Amazon',
           desc: 'Software Development Engineer Intern',
         },
         {
+          index: 2,
           imgSrc: 'https://photos.wellfound.com/startups/i/7691030-3b7944c2101db0a6ae68c24033947cfa-medium_jpg.jpg?buster=1589282986',
           title: 'HumourBaba',
           desc: 'UI/UX Intern',
