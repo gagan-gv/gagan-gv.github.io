@@ -75,7 +75,6 @@ export default {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  -webkit-overflow-scrolling: touch;
 }
 
 .skills h3 {

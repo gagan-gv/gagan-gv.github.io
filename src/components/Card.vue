@@ -1,6 +1,6 @@
 <template>
   <section class="card-container">
-    <img :src="imgSrc" :alt="title" draggable="false" />
+    <img :src="imgSrc" :alt="title" draggable="false" oncontextmenu="return false" />
     <h4>{{ title }}</h4>
     <p v-if="desc !== null">{{ desc }}</p>
   </section>
@@ -28,6 +28,7 @@ export default {
   -o-transition: all 0.5s;
   -moz-transition: all 0.5s;
   -webkit-transition: all 0.5s;
+  cursor: pointer;
 }
 
 .card-container img {
