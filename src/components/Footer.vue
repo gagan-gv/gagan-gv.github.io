@@ -36,9 +36,9 @@ export default {
 
 .footer button {
   outline: none;
-  background-color: #090807;
+  background-color: transparent;
   color: #fff;
-  border: none;
+  border: 2px solid #fff;
   border-radius: 20px;
   padding: 10px;
   font-family: 'Gotham', sans-serif;
@@ -58,7 +58,6 @@ export default {
 
 @media only screen and (max-width:1023px) {
   .footer button {
-    background: #1DB954;
     margin-bottom: 15px;
   }
 
