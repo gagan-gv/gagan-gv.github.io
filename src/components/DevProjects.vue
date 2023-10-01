@@ -9,6 +9,8 @@
         :imgSrc="proj.imgSrc"
         :title="proj.title"
         :desc="proj.desc"
+        :link="proj.link"
+        :pageType="proj.pageType"
       />
     </section>
   </section>
@@ -30,6 +32,8 @@ export default {
           imgSrc: require('@/assets/images/mail-flock.png'),
           title: 'Mail Flock',
           desc: 'Cold mailing app built with spring boot & vue.js',
+          link: 'https://github.com/gagan-gv/mail-flock',
+          pageType: 'github',
         },
         {
           index: 2,
@@ -37,6 +41,8 @@ export default {
           imgSrc: require('@/assets/images/codon.png'),
           title: 'Codon',
           desc: 'A basic code editor built with python.',
+          link: 'https://github.com/gagan-gv/Code-Editor',
+          pageType: 'github',
         },
         {
           index: 3,
@@ -44,6 +50,8 @@ export default {
           imgSrc: require('@/assets/images/covid-daily.jpg'),
           title: 'COVID Daily',
           desc: 'An app which shows the statistics of Covid cases.',
+          link: 'https://dumblabs-co.github.io/coviddaily/',
+          pageType: 'web',
         },
       ],
     };

@@ -1,6 +1,9 @@
 <template>
-  <section class="card-container">
-    <img :src="imgSrc" :alt="title" draggable="false" oncontextmenu="return false" />
+  <section class="card-container" v-on="getClickEvent">
+    <section>
+      <img :src="imgSrc" :alt="title" draggable="false" oncontextmenu="return false" />
+      <i v-if="pageType !== null" :class="linkIcon(pageType)"></i>
+    </section>
     <h4>{{ title }}</h4>
     <p v-if="desc !== null">{{ desc }}</p>
   </section>
@@ -13,6 +16,33 @@ export default {
     imgSrc: String,
     title: String,
     desc: String,
+    link: String,
+    pageType: String,
+  },
+  methods: {
+    openLink(link) {
+      window.open(link, '_blank');
+    },
+    linkIcon(pageType) {
+      console.log(`title: ${this.title} -> pageType: ${pageType}`);
+      if (pageType === null) {
+        return '';
+      }
+      if (pageType === 'github') {
+        return 'fa-brands fa-github';
+      }
+
+      if (pageType === 'behance') {
+        return 'fa-brands fa-behance';
+      }
+
+      return 'fa-solid fa-globe';
+    },
+  },
+  computed: {
+    getClickEvent() {
+      return (this.link ? { click: () => this.openLink(this.link) } : {});
+    },
   },
 };
 </script>
@@ -38,6 +68,24 @@ export default {
   padding: 15px;
 }
 
+.card-container > section {
+  position: relative;
+}
+
+.card-container i {
+  position: absolute;
+  bottom: 0;
+  right: 5px;
+  background: #1DA954;
+  padding: 10px;
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+
 .card-container h4,
 .card-container p {
   margin: 10px 0;
@@ -51,6 +99,11 @@ export default {
 
 .card-container:hover {
   background-color: #2d2a2f;
+}
+
+.card-container:hover i {
+  opacity: 1;
+  bottom: 10px;
 }
 
 @media only screen and (max-width: 1023px) {
@@ -76,6 +129,10 @@ export default {
 
   .card-container:hover {
     background-color: #090807;
+  }
+
+  .card-container:hover i {
+    opacity: 0;
   }
 }
 </style>

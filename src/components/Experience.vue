@@ -9,6 +9,8 @@
         :imgSrc="exp.imgSrc"
         :title="exp.title"
         :desc="exp.desc"
+        :link="null"
+        :pageType="null"
       />
     </section>
   </section>

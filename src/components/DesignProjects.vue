@@ -9,6 +9,8 @@
         :imgSrc="proj.imgSrc"
         :title="proj.title"
         :desc="proj.desc"
+        :link="proj.link"
+        :pageType="proj.pageType"
       />
     </section>
   </section>
@@ -30,6 +32,8 @@ export default {
           imgSrc: require('@/assets/images/ek-rakht.png'),
           title: 'Ek Rakht',
           desc: 'An application design for a blood donation app',
+          link: 'https://www.behance.net/gallery/157046333/Ek-Rakht-Blood-Donation-App',
+          pageType: 'behance',
         },
         {
           index: 2,
@@ -37,6 +41,8 @@ export default {
           imgSrc: require('@/assets/images/code-script.png'),
           title: 'Code Script',
           desc: 'A case study on code to image converter apps.',
+          link: 'https://www.behance.net/gallery/146008979/Code-Script-A-UXUI-Case-Study',
+          pageType: 'behance',
         },
         {
           index: 3,
@@ -44,6 +50,8 @@ export default {
           imgSrc: require('@/assets/images/alcsplash.png'),
           title: 'AlcSplash',
           desc: 'A marketplace mobile design for alcohols.',
+          link: 'https://www.behance.net/gallery/128924549/AlcSplash',
+          pageType: 'behance',
         },
       ],
     };

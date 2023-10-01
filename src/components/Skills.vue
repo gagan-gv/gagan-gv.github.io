@@ -9,6 +9,8 @@
         :imgSrc="skill.imgSrc"
         :title="skill.title"
         :desc="null"
+        :link="null"
+        :pageType="null"
       />
     </section>
   </section>
