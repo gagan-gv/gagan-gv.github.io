@@ -9,8 +9,8 @@
         <a class="links" href="https://www.behance.net/gaganchordia" target="_blank">
             <i class="fa-brands fa-behance"></i><span>@gaganchordia</span>
         </a>
-        <a class="links" href="mailto:gaganchordia@proton.me" target="_blank">
-            <i class="fa-solid fa-envelope"></i><span>Get in Touch</span>
+        <a class="links" href="https://gaganchordia.medium.com/" target="_blank">
+            <i class="fa-brands fa-medium"></i><span>@gaganchordia</span>
         </a>
     </section>
 </template>

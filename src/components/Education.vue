@@ -38,4 +38,21 @@ export default {
 .education h3 {
   font-size: 24px;
 }
+
+::-webkit-scrollbar {
+  background: transparent;
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #272529;
+  border-radius: 2px;
+  padding: 10px;
+}
+
+@media only screen and (max-width: 1023px) {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
 </style>

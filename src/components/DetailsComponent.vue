@@ -7,6 +7,7 @@
     <SkillsComponent />
     <DevProjects />
     <DesignProjects />
+    <FooterComponent />
   </section>
 </template>
 
@@ -18,6 +19,7 @@ import ExperienceComponent from './Experience.vue';
 import SkillsComponent from './Skills.vue';
 import DevProjects from './DevProjects.vue';
 import DesignProjects from './DesignProjects.vue';
+import FooterComponent from './Footer.vue';
 
 export default {
   name: 'DetailsComponent',
@@ -29,6 +31,7 @@ export default {
     SkillsComponent,
     DevProjects,
     DesignProjects,
+    FooterComponent,
   },
 };
 </script>
@@ -56,6 +59,10 @@ export default {
   .content {
     background-color: #090807;
     padding: 20px;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
   }
 }
 </style>

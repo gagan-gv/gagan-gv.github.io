@@ -63,4 +63,21 @@ export default {
   font-size: 24px;
   margin-top: 15px;
 }
+
+::-webkit-scrollbar {
+  background: transparent;
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #272529;
+  border-radius: 2px;
+  padding: 10px;
+}
+
+@media only screen and (max-width: 1023px) {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
 </style>
