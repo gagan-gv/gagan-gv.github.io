@@ -24,7 +24,6 @@ export default {
       window.open(link, '_blank');
     },
     linkIcon(pageType) {
-      console.log(`title: ${this.title} -> pageType: ${pageType}`);
       if (pageType === null) {
         return '';
       }
