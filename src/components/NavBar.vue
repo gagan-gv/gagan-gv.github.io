@@ -18,11 +18,7 @@ export default {
   name: 'NavBar',
   methods: {
     downloadResume() {
-      const link = document.createElement('a');
-      link.href = '@/assets/resume/Gagan Chordia - Resume.pdf';
-      link.download = 'Gagan Chordia - Resume.pdf';
-
-      link.click();
+      window.open('https://bit.ly/resume-gagan-chordia', '_blank');
     },
   },
 };
