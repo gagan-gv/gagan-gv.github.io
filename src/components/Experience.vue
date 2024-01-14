@@ -29,6 +29,12 @@ export default {
       experience: [
         {
           index: 1,
+          imgSrc: 'https://i0.wp.com/ceiamag.com/wp-content/uploads/2021/03/afaqs_2020-12_71dc202e-f873-4598-baa8-b9236beacfd2_Swiggy_PNG_Logo.jpg?fit=1200%2C1200&ssl=1',
+          title: 'Swiggy',
+          desc: 'Associate Software Development Engineer',
+        },
+        {
+          index: 1,
           imgSrc: 'https://s3-symbol-logo.tradingview.com/amazon--600.png',
           title: 'Amazon',
           desc: 'Software Development Engineer Intern',
